@@ -8,8 +8,8 @@ volumes:
 services:
   php-env:
     build: .
-    volumes:
-      - .:/opt/lampp/htdocs/
+    # volumes:
+    #   - .:/opt/lampp/htdocs/
     ports:
       - 80:80
     command: ["sh", "/startup.sh"]
