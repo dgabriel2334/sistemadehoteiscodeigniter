@@ -1,0 +1,33 @@
+version: '3.9'
+networks:
+  mynet:
+volumes:
+  mariadb_data:
+  phpmyadmin_data:
+  container-volume:
+services:
+  php-env:
+    build: .
+    volumes:
+      - .:/opt/lampp/htdocs/
+    ports:
+      - 8000:80
+
+  # db:
+  #   image: mariadb:latest
+  #   restart: always
+  #   hostname: banco
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 123456
+  #     MYSQL_DATABASE: lodge
+
+  #   volumes:
+  #     - ./lodge.sql:/docker-entrypoint-initdb.d/lodge.sql
+
+  # phpmyadmin:
+  #   image: phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     - PMA_ARBITRARY=1
