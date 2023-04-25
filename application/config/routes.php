@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = "login";
+$route['default_controller'] = "client";
 $route['404_override'] = 'error';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -135,6 +135,10 @@ $route['addedNewBooking'] = 'booking/addedNewBooking';
 
 $route['getRoomsByFT'] = 'booking/getRoomsByFT';
 $route['getCustomersByName'] = 'booking/getCustomersByName';
+
+/******* Client Routes ***********/
+
+$route['client'] = 'client/index';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
