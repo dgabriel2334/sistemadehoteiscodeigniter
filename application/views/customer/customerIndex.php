@@ -4,14 +4,14 @@
       <h1>
         <i class="fa fa-users" aria-hidden="true"></i> Gerenciar clientes
         <small>Adicionar, Editar, Deletar</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</a></span>
+        <span class='pull-right'><a class="btn btn-primary" href="./addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</a></span>
       </h1>
     </section>
     <section class="content">
         <!-- <div class="row">
             <div class="col-xs-12 text-right">
                 <div class="form-group">
-                    <a class="btn btn-primary" href="<?php echo base_url(); ?>addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</a>
+                    <a class="btn btn-primary" href="./addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</a>
                 </div>
             </div>
         </div> -->

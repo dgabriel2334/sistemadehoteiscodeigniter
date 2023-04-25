@@ -4,14 +4,14 @@
       <h1>
         <i class="fa fa-users" aria-hidden="true"></i> Gerenciar usuários
         <small>Adicionar, Editar, Deletar</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNew"><i class="fa fa-plus" aria-hidden="true"></i> Add New User</a></span>
+        <span class='pull-right'><a class="btn btn-primary" href="./addNew"><i class="fa fa-plus" aria-hidden="true"></i> Add New User</a></span>
       </h1>
     </section>
     <section class="content">
         <!-- <div class="row">
             <div class="col-xs-12 text-right">
                 <div class="form-group">
-                    <a class="btn btn-primary" href="<?php echo base_url(); ?>addNew"><i class="fa fa-plus" aria-hidden="true"></i> Add New</a>
+                    <a class="btn btn-primary" href="./addNew"><i class="fa fa-plus" aria-hidden="true"></i> Add New</a>
                 </div>
             </div>
         </div> -->
@@ -73,7 +73,7 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="./assets/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery('ul.pagination li a').click(function (e) {
