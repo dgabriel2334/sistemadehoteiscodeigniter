@@ -7,14 +7,14 @@ $selected = "selected='selected'";
       <h1>
         Gerenciar quartos
         <small>Adicionar, Editar, Deletar</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo quarto </a></span>
+        <span class='pull-right'><a class="btn btn-primary" href="./addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo quarto </a></span>
       </h1>
     </section>
     <section class="content">
         <!-- <div class="row">
             <div class="col-xs-12 text-right">
                 <div class="form-group">
-                    <a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo quarto </a>
+                    <a class="btn btn-primary" href="./addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo quarto </a>
                 </div>
             </div>
         </div> -->
@@ -119,7 +119,7 @@ $selected = "selected='selected'";
         </div>
     </section>
 </div>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="./assets/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery('ul.pagination li a').click(function (e) {
