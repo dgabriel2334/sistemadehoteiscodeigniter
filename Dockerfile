@@ -38,15 +38,12 @@ COPY supervisord-openssh-server.conf /etc/supervisor/conf.d/supervisord-openssh-
 
 # copy a startup script
 COPY startup.sh /startup.sh
-COPY initdb.sh /initdb.sh
 
 VOLUME [ "/var/log/mysql/", "/var/log/apache2/", "/www", "/opt/lampp/apache2/conf.d/" ]
 
 EXPOSE 3306
 EXPOSE 22
 EXPOSE 80
-# RUN /opt/lampp/lampp start
 
 WORKDIR /opt/lampp/bin/
-# RUN ./mysql -u root -p -e "CREATE DATABASE lodge"
 CMD ["sh", "/startup.sh"]
