@@ -180,8 +180,8 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="./assets/js/bookings.js" charset="utf-8"></script>
-<script type="text/javascript" src="./assets/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bookings.js" charset="utf-8"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinymce.init({
     selector: "textarea",

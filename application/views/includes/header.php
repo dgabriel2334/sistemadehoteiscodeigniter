@@ -5,27 +5,27 @@
     <title><?php echo $pageTitle; ?></title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
     <!-- FontAwesome 4.3.0 -->
-    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons 2.0.0 -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="./assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="./assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     <style>
     	.error{
     		color:red;
     		font-weight: normal;
     	}
     </style>
-    <link href="./assets/plugins/datepicker/datepicker3.css?" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/plugins/datepicker/datepicker3.css?" rel="stylesheet" type="text/css" />
     <!-- jQuery 2.1.4 -->
-    <script src="./assets/js/jQuery-2.1.4.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jQuery-2.1.4.min.js"></script>
     <script type="text/javascript">
-        var baseURL = "./";
+        var baseURL = "<?php echo base_url(); ?>";
     </script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,7 +40,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="./" class="logo">
+        <a href="<?php echo base_url(); ?>" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>SIS</b></span>
           <!-- logo for regular state and mobile devices -->
@@ -55,20 +55,20 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <li class="dropdown user user-menu">
-                <a href="./addNewBooking" class="bg-primary">
+                <a href="<?php echo base_url(); ?>addNewBooking" class="bg-primary">
                   <span><i class="fa fa-plus"></i><b> Nova reserva</b></span>
                 </a>
               <li>
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="./assets/dist/img/avatar.png" class="user-image" alt="User Image"/>
+                  <img src="<?php echo base_url(); ?>assets/dist/img/avatar.png" class="user-image" alt="User Image"/>
                   <span class="hidden-xs"><?php echo $name; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="./assets/dist/img/avatar.png" class="img-circle" alt="User Image" />
+                    <img src="<?php echo base_url(); ?>assets/dist/img/avatar.png" class="img-circle" alt="User Image" />
                     <p>
                       <?php echo $name; ?>
                       <small><?php echo $role_text; ?></small>
@@ -77,10 +77,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="./loadChangePass" class="btn btn-default btn-flat"><i class="fa fa-key"></i> Mudar senha</a>
+                      <a href="<?php echo base_url(); ?>loadChangePass" class="btn btn-default btn-flat"><i class="fa fa-key"></i> Mudar senha</a>
                     </div>
                     <div class="pull-right">
-                      <a href="./logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Sair</a>
+                      <a href="<?php echo base_url(); ?>logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Sair</a>
                     </div>
                   </li>
                 </ul>
@@ -97,18 +97,18 @@
           <ul class="sidebar-menu">
             <li class="header">Navegação principal</li>
             <li class="treeview">
-              <a href="./dashboard">
+              <a href="<?php echo base_url(); ?>dashboard">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
               </a>
             </li>
             <li class="treeview">
-              <a href="./customer">
+              <a href="<?php echo base_url(); ?>customer">
                 <i class="fa fa-users"></i>
                 <span>Clientes</span>
               </a>
             </li>
             <li class="treeview">
-              <a href="./bookings">
+              <a href="<?php echo base_url(); ?>bookings">
                 <i class="fa fa-book"></i>
                 <span>Reservas</span>
               </a>
@@ -125,23 +125,23 @@
               </a>              
               <ul class="treeview-menu menu-open">
                 <li>
-                  <a href="./floorsListing" >
+                  <a href="<?php echo base_url(); ?>floorsListing" >
                     <i class="fa fa-circle-o"></i> Andares
                   </a>
                 </li>
                 <li>
-                  <a href="./roomSizesListing" >
+                  <a href="<?php echo base_url(); ?>roomSizesListing" >
                     <i class="fa fa-circle-o"></i> Tamanhos de quarto
                   </a>
                 </li>
                 
                 <li>
-                  <a href="./roomListing" >
+                  <a href="<?php echo base_url(); ?>roomListing" >
                     <i class="fa fa-circle-o"></i> Quartos 
                   </a>
                 </li>
                 <li>
-                  <a href="./baseFareListing" >
+                  <a href="<?php echo base_url(); ?>baseFareListing" >
                     <i class="fa fa-circle-o"></i> Valores
                   </a>
                 </li>
@@ -156,7 +156,7 @@
             {
             ?>
             <li class="treeview">
-              <a href="./userListing">
+              <a href="<?php echo base_url(); ?>userListing">
                 <i class="fa fa-users"></i>
                 <span>Usuários</span>
               </a>

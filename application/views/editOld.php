@@ -146,4 +146,4 @@ if(!empty($userInfo))
     </section>
 </div>
 
-<script src="./assets/js/editUser.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/editUser.js" type="text/javascript"></script>

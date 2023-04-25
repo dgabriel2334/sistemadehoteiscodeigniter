@@ -4,14 +4,14 @@
       <h1>
         Gerenciar tamanhos de quarto
         <small>Adicionar, Editar, Deletar</small>
-        <span class='pull-right'><a class="btn btn-primary" href="./addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo tamanho</a></span>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo tamanho</a></span>
       </h1>
     </section>
     <section class="content">
         <!-- <div class="row">
             <div class="col-xs-12 text-right">
                 <div class="form-group">
-                    <a class="btn btn-primary" href="./addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo tamanho</a>
+                    <a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar novo tamanho</a>
                 </div>
             </div>
         </div> -->
@@ -69,7 +69,7 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="./assets/js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery('ul.pagination li a').click(function (e) {
