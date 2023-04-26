@@ -20,26 +20,26 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</b>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hospedagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Localização</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Administrativo</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hospedagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Localização</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Administrativo</a>
+                        </li>
+                    </ul>
+             </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
