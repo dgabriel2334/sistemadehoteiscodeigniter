@@ -4,7 +4,7 @@ RUN a2enmod rewrite
 
 COPY ./ /var/www/html/
 
-RUN service apache2 restart
+# RUN service apache2 restart
 
 RUN apt-get update -y && apt-get install -y libmariadb-dev
 
