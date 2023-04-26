@@ -12,7 +12,7 @@ services:
       - .:/opt/lampp/htdocs/
     ports:
       - 80:80
-    command: ["sh", "/startup.sh"]
+    # command: ["sh", "/startup.sh"]
     tty: true
   # db:
   #   image: mariadb:latest
