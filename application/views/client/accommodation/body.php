@@ -15,9 +15,11 @@
       </div>
     </div>
     <div class="form-group row">
-      <label for="location" class="col-sm-2 col-form-label">Localização</label>
+      <label for="roomtype" class="col-sm-2 col-form-label">Cidade</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="location" name="location" placeholder="Cidade, Estado ou País" required>
+        <select class="form-control" id="roomtype" name="roomtype">
+          <option selected>Manaus</option>
+        </select>
       </div>
     </div>
     <div class="form-group row">

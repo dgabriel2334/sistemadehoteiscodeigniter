@@ -89,7 +89,7 @@ class Client extends CI_Controller
         );
 
         $this->load->view('client/default/header', $dados);
-        $this->load->view('client/home/body');
+        $this->load->view('client/contact/body');
         $this->load->view('client/default/footer');
     }
 }
