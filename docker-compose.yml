@@ -9,7 +9,7 @@ services:
   php-env:
     build: .
     volumes:
-      - .:/opt/lampp/htdocs/
+      - .:/var/www/html
     ports:
       - 80:80
     # command: ["sh", "/startup.sh"]

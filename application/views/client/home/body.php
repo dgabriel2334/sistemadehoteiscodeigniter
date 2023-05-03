@@ -1,61 +1,18 @@
-<!DOCTYPE html> 
-<html>  
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Hotel do Seu Sonho</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head> 
-    <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Hotel do Seu Sonho</b></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</b>
-                        </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hospedagem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Localização</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Administrativo</a>
-                        </li>
-                    </ul>
-             </div>
-            </div>
-        </nav>
-    <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+<body>
+    <div class="jumbotron jumbotron-fluid animate__animated animate__fadeInUp">
+    <div class="container">
         <h1 class="display-4">Bem-Vindo ao Hotel do Seu Sonho!</h1>
         <p class="lead">Venha e encha-se de experiências!</p>
-      </div>
     </div>
-    <!-- Carrousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    </div>
+    <div id="carouselExampleIndicators animate__animated animate__fadeInUp" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner animate__animated animate__fadeInUp">
             <div class="carousel-item active">
             <img class="d-flex mx-auto" height="600px" width="1200px" src="https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="First slide">
             </div>
@@ -79,8 +36,7 @@
         </a>
     </div>
     <br>
-    <!-- cards -->
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
         <div class="text-center mb-4">
             <h2>Serviços Oferecidos</h2>
         </div>
@@ -105,20 +61,4 @@
             </div>
         </div>
     </div>
-
-    <br>
-
-    <!-- footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Hotel do Seu Sonho 2020</p>
-      </div>
-    </footer>
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </body>
-</html>
