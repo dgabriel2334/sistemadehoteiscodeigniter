@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="http://www.amazonastur.am.gov.br/wp-content/uploads/2020/04/Amazonas-te-espera.mp4" class="card-img-top" alt="Motivo 1"></video> 
+                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="assets/videos/Amazonas-te-espera.mp4" class="card-img-top" alt="Motivo 1"></video> 
                         <div class="card-body">
                             <h3>Conheça a amazônia</h3>
                             <p>Descubra a beleza exótica e a diversidade de fauna e flora que só a maior floresta tropical do mundo pode oferecer.</p>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="https://abraciclo.com.br/site/wp-content/uploads/2022/07/V%C3%ADdeo-1-1.mp4" class="card-img-top" alt="Motivo 1"></video> 
+                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="assets/videos/manaus.mp4" class="card-img-top" alt="Motivo 1"></video> 
                         <div class="card-body">
                             <h3>Conheça Manaus</h3>
                             <p> Com uma rica história, cultura e gastronomia, Manaus é um destino que oferece uma mistura única de modernidade e tradição.</p>
