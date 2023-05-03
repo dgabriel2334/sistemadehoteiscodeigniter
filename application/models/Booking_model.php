@@ -42,13 +42,24 @@ class Booking_model extends CI_Model
         return count($query->result());
     }
 
-    function bookingListing($searchText, $searchRoomId, $searchFloorId, $searchRoomSizeId, $customerName, $mobileNumber, $page, $segment)
+    function getSizeRoomData($roomSizeId)
+    {
+        $this->db->select('sizeTitle, picture');
+        $this->db->from('ldg_room_sizes');
+        $this->db->where('sizeId', $roomSizeId);
+
+        $query = $this->db->get();
+        $result = $query->result();
+        return $result[0];
+    }
+
+    function bookingListing($searchText, $searchRoomId, $searchFloorId, $searchRoomSizeId, $customerName, $mobileNumber, $page, $segment, $uuid)
     {
         $this->db->select('BaseTbl.bookingId, BaseTbl.customerId, BaseTbl.bookingDtm, BaseTbl.roomId,
                             BaseTbl.bookStartDate, BaseTbl.bookEndDate, BaseTbl.bookingComments,
                             C.customerName, C.customerPhone, C.customerEmail,
                             R.roomNumber, R.roomSizeId, R.floorId, RS.sizeTitle, RS.sizeDescription,
-                            F.floorName, F.floorCode');
+                            F.floorName, F.floorCode, RS.picture');
         $this->db->from('ldg_bookings AS BaseTbl');
         $this->db->join('ldg_customer AS C', 'BaseTbl.customerId = C.customerId');
         $this->db->join('ldg_rooms AS R', 'BaseTbl.roomId = R.roomId');
@@ -66,6 +77,9 @@ class Booking_model extends CI_Model
         }
         if(!empty($customerName)){
             $this->db->like('C.customerName', $customerName);
+        }
+        if(!empty($uuid)){
+            $this->db->like('BaseTbl.uuid', $uuid);
         }
         if(!empty($mobileNumber)){
             $this->db->like('C.customerPhone', $mobileNumber);
@@ -109,6 +123,11 @@ class Booking_model extends CI_Model
         $this->db->trans_complete();
         
         return $insert_id;
+    }
+
+    function returnBookingByUuid($uuid)
+    {
+        return $this->bookingListing(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, $uuid);
     }
 
     function getAvailableRooms($startDate, $endDate, $floorId = '', $roomSizeId = '', $roomId = '')

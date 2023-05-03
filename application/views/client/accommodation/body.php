@@ -1,23 +1,24 @@
 <br>
 <link rel="stylesheet" href="assets/styles/accommodation.css"/>
+<script src="assets/js/accommodation.js"></script>
 
 <div class="container animate__animated animate__fadeInUp" style="background-color: #f5f5f5; padding: 20px;">
   <!-- <h2>Verifique a disponibilidade de quartos</h2> -->
-  <form class="form-horizontal">
+  <form id="check-available-rooms" class="form-horizontal">
     <div class="form-group row">
       <label for="checkin" class="col-sm-2 col-form-label">Data de Check-in</label>
       <div class="col-sm-4">
-        <input type="date" class="form-control" id="checkin" name="checkin" min="<?php echo date('Y-m-d'); ?>" required>
+        <input type="date" class="form-control" id="startDate" name="startDate" min="<?php echo date('Y-m-d'); ?>" required>
       </div>
       <label for="checkout" class="col-sm-2 col-form-label">Data de Check-out</label>
       <div class="col-sm-4">
-        <input type="date" class="form-control" id="checkout" name="checkout" min="<?php echo date('Y-m-d'); ?>" required>
+        <input type="date" class="form-control" id="endDate" name="endDate" min="<?php echo date('Y-m-d'); ?>" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="roomtype" class="col-sm-2 col-form-label">Cidade</label>
       <div class="col-sm-10">
-        <select class="form-control" id="roomtype" name="roomtype">
+        <select class="form-control" id="city" name="city">
           <option selected>Manaus</option>
         </select>
       </div>
@@ -25,11 +26,11 @@
     <div class="form-group row">
       <label for="roomtype" class="col-sm-2 col-form-label">Tipo de Quarto</label>
       <div class="col-sm-10">
-        <select class="form-control" id="roomtype" name="roomtype">
+        <select class="form-control" id="roomSizeId" name="roomSizeId">
           <option selected>Escolha...</option>
-          <option>Quarto Simples</option>
-          <option>Quarto Duplo</option>
-          <option>Quarto de Luxo</option>
+          <?php foreach ($quartos as $quarto): ?>
+          <option value="<?= $quarto->sizeId?>"><?= $quarto->sizeTitle ?></option>
+          <?php endforeach; ?>
         </select>
       </div>
     </div>
@@ -72,6 +73,31 @@
             <p>Não importa a hora, aqui no nosso hotel estamos sempre prontos para atender aos seus desejos gastronômicos. Com nosso serviço de quarto 24 horas, você pode desfrutar de uma deliciosa refeição no conforto do seu quarto, a qualquer momento do dia ou da noite.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de "sem quartos disponíveis" -->
+<button hidden id="open-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#no-rooms-modal">
+  Verificar disponibilidade
+</button>
+
+<div id="no-rooms-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="no-rooms-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="no-rooms-modal-label">Sem quartos disponíveis</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Poxa, infelizmente não temos quartos disponíveis. Por favor, tente alterar o filtro de busca.</p>
+        <img class="rounded mx-auto d-block" src="https://static.vecteezy.com/ti/vetor-gratis/p3/3067848-icone-expressivo-de-sorriso-triste-de-desenho-animado-no-estilo-plano-gratis-vetor.jpg" alt="Cara triste" width="100" height="100">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>

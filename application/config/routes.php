@@ -143,6 +143,10 @@ $route['about'] = 'client/about';
 $route['accommodation'] = 'client/accommodation';
 $route['location'] = 'client/location';
 $route['contact'] = 'client/contact';
+$route['newBooking'] = 'client/newBooking';
+$route['addNewCustomer'] = 'client/addNewCustomer';
+$route['addNewBooking'] = 'client/addNewBooking';
+$route['bookingInfo'] = 'client/bookingInfo';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
