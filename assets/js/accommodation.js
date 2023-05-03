@@ -6,10 +6,6 @@ $(function() {
     });
 });
 
-$(document).on("click", '#close', function() {
-  location.href = '/';
-});
-
 $(function() {
   $('#booking-confirmation').submit(function(event) {
     event.preventDefault(); 
@@ -65,6 +61,9 @@ function addNewBooking(customerId) {
     $('#booking-link').attr('src', 'data:image/png;base64,' + res.qrCodeBase64);
     $('#btn-enviar').remove();
     $('#open-modal-qrcode').trigger('click');
+    $(document).on("click", '#close', function() {
+      location.href = 'bookingInfo?uuid='+res.uuid;
+    });
   });
 }
 
