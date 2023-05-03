@@ -25,6 +25,11 @@
     border-top-right-radius: 10px;
 }
 
+.motivos .card video {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .motivos .card-body {
     text-align: justify;
 }

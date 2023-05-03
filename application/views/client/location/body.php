@@ -13,12 +13,12 @@
 </section>
 
 <script>
-    var mymap = L.map('map').setView([-3.127215,-60.023983], 16);
+    var mymap = L.map('map').setView([-3.0914283,-60.0286104], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
             '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18
     }).addTo(mymap);
-    var marker = L.marker([-3.127215,-60.023983]).addTo(mymap);
-    marker.bindPopup("<b>Estácio do Amazonas</b><br>Manaus, AM.").openPopup();
+    var marker = L.marker([-3.0914283,-60.0286104]).addTo(mymap);
+    marker.bindPopup("<b>Faculdade Estácio do Amazonas</b><br>Manaus, AM.").openPopup();
 </script>

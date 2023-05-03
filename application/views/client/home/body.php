@@ -1,11 +1,12 @@
 <body>
+    <link rel="stylesheet" href="assets/styles/accommodation.css"/>
     <div class="jumbotron jumbotron-fluid animate__animated animate__fadeInUp">
-    <div class="container">
-        <h1 class="display-4">Bem-Vindo ao Hotel do Seu Sonho!</h1>
-        <p class="lead">Venha e encha-se de experiências!</p>
+        <div class="container">
+            <h1 class="display-4">Bem-Vindo ao Hotel do Seu Sonho!</h1>
+            <p class="lead">Venha e encha-se de experiências!</p>
+        </div>
     </div>
-    </div>
-    <div id="carouselExampleIndicators animate__animated animate__fadeInUp" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -37,28 +38,69 @@
     </div>
     <br>
     <div class="container animate__animated animate__fadeInUp">
-        <div class="text-center mb-4">
-            <h2>Serviços Oferecidos</h2>
-        </div>
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Hospedagem</h5>
-                    <p class="card-text">Venha se hospedar aqui e aproveite.</p>
+    <div class="motivos animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Passeios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="http://www.amazonastur.am.gov.br/wp-content/uploads/2020/04/Amazonas-te-espera.mp4" class="card-img-top" alt="Motivo 1"></video> 
+                        <div class="card-body">
+                            <h3>Conheça a amazônia</h3>
+                            <p>Descubra a beleza exótica e a diversidade de fauna e flora que só a maior floresta tropical do mundo pode oferecer.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Eventos</h5>
-                    <p class="card-text">Organize os seus eventos aqui mesmo.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="https://abraciclo.com.br/site/wp-content/uploads/2022/07/V%C3%ADdeo-1-1.mp4" class="card-img-top" alt="Motivo 1"></video> 
+                        <div class="card-body">
+                            <h3>Conheça Manaus</h3>
+                            <p> Com uma rica história, cultura e gastronomia, Manaus é um destino que oferece uma mistura única de modernidade e tradição.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Restaurante</h5>
-                    <p class="card-text">Aproveite nossas refeições aqui mesmo.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div id="carroselCard" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carroselCard" data-slide-to="0" class="active"></li>
+                                <li data-target="#carroselCard" data-slide-to="1"></li>
+                                <li data-target="#carroselCard" data-slide-to="2"></li>
+                                <li data-target="#carroselCard" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner animate__animated animate__fadeInUp">
+                                <div class="carousel-item active">
+                                <img height="100%" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQ7jflvTxwkDK-EHIan9NNaqe1APM342GFA&usqp=CAU" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-flex mx-auto" height="100%" width="100%" src="https://i.ytimg.com/vi/wcwToLaYOdY/maxresdefault.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-flex mx-auto" height="100%" width="100%" src="https://agencia.sorocaba.sp.gov.br/wp-content/uploads/2019/05/foto-35-450x300.jpeg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-flex mx-auto" height="100%" width="100%" src="https://www12.senado.leg.br/noticias/materias/2007/04/16/cdh-debate-direitos-dos-povos-indigenas-no-dia-do-indio/imagem73353" alt="Four slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carroselCard" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carroselCard" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Passeio com nativos</h3>
+                            <p>Descubra a riqueza cultural da região e tenha uma experiência única com nossos passeios junto aos nativos! Conheça de perto as tradições, costumes e histórias dos povos da região, desfrute da culinária típica e se encante com as paisagens deslumbrantes. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <!-- <div class="wp-block-cover has-background-dim"><video class="wp-block-cover__video-background" autoplay="" muted="" loop="" src="http://www.amazonastur.am.gov.br/wp-content/uploads/2020/04/Amazonas-te-espera.mp4"></video></div> -->
 </body>
