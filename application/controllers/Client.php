@@ -23,8 +23,74 @@ class Client extends CI_Controller
      */
     public function index()
     {
-        $this->load->view('client/client');
+        $dados = array(
+            'titulo' => 'Página Inicial',
+            'ativa' => 'home'
+        );
 
+        $this->load->view('client/default/header', $dados);
+        $this->load->view('client/home/body');
+        $this->load->view('client/default/footer');
+    }
+
+    /**
+     * Index Page for this controller.
+     */
+    public function about()
+    {
+        $dados = array(
+            'titulo' => 'Sobre nós',
+            'ativa' => 'about'
+        );
+
+        $this->load->view('client/default/header', $dados);
+        $this->load->view('client/about/body');
+        $this->load->view('client/default/footer');
+    }
+
+    /**
+     * Index Page for this controller.
+     */
+    public function accommodation()
+    {
+        $dados = array(
+            'titulo' => 'Hospedagem',
+            'ativa' => 'accommodation'
+        );
+
+        $this->load->view('client/default/header', $dados);
+        $this->load->view('client/accommodation/body');
+        $this->load->view('client/default/footer');
+    }
+
+    /**
+     * Index Page for this controller.
+     */
+    public function location()
+    {
+        $dados = array(
+            'titulo' => 'Localização',
+            'ativa' => 'location'
+        );
+
+        $this->load->view('client/default/header', $dados);
+        $this->load->view('client/location/body');
+        $this->load->view('client/default/footer');
+    }  
+    
+    /**
+     * Index Page for this controller.
+     */
+    public function contact()
+    {
+        $dados = array(
+            'titulo' => 'Contato',
+            'ativa' => 'contact'
+        );
+
+        $this->load->view('client/default/header', $dados);
+        $this->load->view('client/home/body');
+        $this->load->view('client/default/footer');
     }
 }
 

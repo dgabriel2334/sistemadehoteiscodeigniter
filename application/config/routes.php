@@ -139,6 +139,10 @@ $route['getCustomersByName'] = 'booking/getCustomersByName';
 /******* Client Routes ***********/
 
 $route['client'] = 'client/index';
+$route['about'] = 'client/about';
+$route['accommodation'] = 'client/accommodation';
+$route['location'] = 'client/location';
+$route['contact'] = 'client/contact';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
