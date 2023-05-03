@@ -19,7 +19,6 @@ class Booking extends BaseController
         parent::__construct();
         $this->load->model('booking_model', "booking");
         $this->load->model('rooms_model');
-        $this->isLoggedIn();   
     }
 
     /**
