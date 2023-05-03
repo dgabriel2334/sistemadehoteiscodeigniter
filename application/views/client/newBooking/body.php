@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="assets/styles/newBooking.css"/>
 <script src="assets/js/accommodation.js"></script>
 <body>
-  <div class="container">
+  <div class="container animate__animated animate__fadeInUp">
     <h1>Confirmação de Reserva</h1>
     <p>Obrigado por escolher nosso hotel! Confira os detalhes da sua reserva:</p>
     <p>Check-in: <strong><?= date('d/m/Y', strtotime($bookingData['startDate'])); ?></strong></p>
