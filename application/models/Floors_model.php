@@ -3,7 +3,6 @@
 /**
  * Class : Floors_model 
  * Floors model to handle database operations related to floors
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 12 Jan 2017
  */

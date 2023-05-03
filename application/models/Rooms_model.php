@@ -3,7 +3,6 @@
 /**
  * Class : Rooms_model 
  * Rooms model to handle database operations related to rooms
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 15 Feb 2017
  */

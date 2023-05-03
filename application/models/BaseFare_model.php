@@ -3,7 +3,6 @@
 /**
  * Class : BaseFare_model 
  * BaseFare model to handle database operations related to base fare
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 10 Feb 2017
  */

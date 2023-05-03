@@ -3,7 +3,6 @@
 /**
  * Class : BaseController
  * Base Class to control over all the classes
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 15 November 2016
  */

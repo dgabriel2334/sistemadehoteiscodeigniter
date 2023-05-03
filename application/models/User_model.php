@@ -3,7 +3,6 @@
 /**
  * Class : User_model 
  * User model to handle database operations related to users
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 15 November 2016
  */

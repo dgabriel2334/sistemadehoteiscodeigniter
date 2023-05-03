@@ -1,7 +1,6 @@
 /**
  * Bookings
  * Date : 2019-02-01
- * @author : Kishor Mali
  */
 
 // Source: http://stackoverflow.com/questions/497790

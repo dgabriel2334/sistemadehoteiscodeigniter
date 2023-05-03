@@ -5,7 +5,6 @@ require APPPATH . '/libraries/BaseController.php';
 /**
  * Class : Floors (FloorsController)
  * Floors Class to control all floor related operations.
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 15 Feb 2017
  */

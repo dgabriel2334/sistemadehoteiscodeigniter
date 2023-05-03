@@ -3,7 +3,6 @@
 /**
  * Class : RoomSizes_model 
  * RoomSizes model to handle database operations related to room sizes
- * @author : Kishor Mali
  * @version : 1.1
  * @since : 12 Jan 2017
  */
