@@ -11,9 +11,15 @@ services:
     volumes:
       - .:/var/www/html
     ports:
-      - 80:80
+      - 81:80
     # command: ["sh", "/startup.sh"]
     tty: true
+    networks:
+      - projects
+networks:
+  projects:
+    driver: bridge
+    external: true
   # db:
   #   image: mariadb:latest
   #   restart: always
